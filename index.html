@@ -108,3 +108,111 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habit Calendar</title>
+  <style>
+    /* CSS Styles (Highlighted in Green) */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #3498db;
+    }
+
+    .habit-button {
+      background-color: #2ecc71;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #calendar {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+
+    .day {
+      background-color: #ecf0f1;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #update-btn {
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Habit Calendar</h1>
+
+  <!-- Habit Buttons (Highlighted in Yellow) -->
+  <div>
+    <button class="habit-button" onclick="selectHabit('Exercise')">Exercise</button>
+    <button class="habit-button" onclick="selectHabit('Read')">Read</button>
+    <button class="habit-button" onclick="selectHabit('Meditate')">Meditate</button>
+  </div>
+
+  <!-- Time Frame (Highlighted in Blue) -->
+  <div>
+    <label for="time-frame">Select Time Frame:</label>
+    <select id="time-frame" onchange="changeTimeFrame()">
+      <option value="month">Month</option>
+      <option value="quarter">Quarter</option>
+      <option value="year">Year</option>
+    </select>
+  </div>
+
+  <!-- Habit Calendar (Highlighted in Purple) -->
+  <div id="calendar"></div>
+
+  <!-- Update Button (Highlighted in Red) -->
+  <button id="update-btn" onclick="updateCalendar()">Update Calendar</button>
+
+  <script>
+    // JavaScript Code (Highlighted in Orange)
+    function selectHabit(habit) {
+      console.log('Selected Habit:', habit);
+    }
+
+    function changeTimeFrame() {
+      const timeFrame = document.getElementById('time-frame').value;
+      console.log('Selected Time Frame:', timeFrame);
+    }
+
+    function updateCalendar() {
+      console.log('Calendar Updated');
+    }
+  </script>
+</body>
+</html>
+
