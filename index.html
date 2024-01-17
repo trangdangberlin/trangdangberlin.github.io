@@ -3,49 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><span style="color:#0f9d58;">Trang Coding Diary</span></title>
+  <title style="color:#0f9d58;">Trang Coding Diary</title>
   <meta http-equiv="cache-control" content="no-cache"> 
   <meta http-equiv="expires" content="0"> 
   <meta http-equiv="pragma" content="no-cache">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script> <!-- Add this line -->
+  <script src="script.js"></script>
   <style>
-    /* CSS Styles (Highlighted in Green) */
     body {
       font-family: Arial, sans-serif;
-      background-color: #0f9d58; /* Change background color here */
+      background-color: #0f9d58;
       margin: 0;
       padding: 20px;
       text-align: center;
     }
 
-    /* ... (rest of your CSS styles) ... */
-  </style>
+    #diary, #content {
+      margin-top: 20px;
+    }
 
+    h1 {
+      color: #3498db;
+    }
+
+    .side-by-side img {
+      margin: 0 10px;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    #cheatsheet {
+      text-align: left;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Professional Web Development Diary -->
   <section id="diary">
-    <h1>
-      Professional Web Development Diary
-    </h1>
+    <h1>Professional Web Development Diary</h1>
     <div class="side-by-side">
-      <img 
-        id="smallImage" 
-        src="https://m.media-amazon.com/images/I/71hfN+Je2qL._AC_SL1500_.jpg" 
-        alt="Small Image"
-      >
-      <img 
-        id="smallImage" 
-        src="https://i.ytimg.com/vi/8DajVKAkL50/sddefault.jpg" 
-        alt="Small Image"
-      >
+      <img id="smallImage" src="https://m.media-amazon.com/images/I/71hfN+Je2qL._AC_SL1500_.jpg" alt="Small Image">
+      <img id="smallImage" src="https://i.ytimg.com/vi/8DajVKAkL50/sddefault.jpg" alt="Small Image">
     </div>
-   
+
     <ul>
       <p>This is a diary of what I learn every day. It will document my progress in web development throughout 2024.</p>
-      <li>2024-01-08: I created a cheatsheet today in order to keep track of the things I learn.</li>
+      <li>2024-01-08: I created a cheatsheet today to keep track of what I learn.</li>
       <li>2024-01-06: I learned how to use different operators in R.</li>
       <li>I will practice on posit, with different databases.</li>
       <li>I aim to finish the case study in the next few days.</li>
@@ -53,33 +66,29 @@
       <li>Let’s review what you’ve learned so far:</li>
       <p>HTML stands for HyperText Markup Language and is used to create the structure and content of a webpage.
         Most HTML elements contain opening and closing tags with raw text or other HTML tags between them.
-       HTML elements can be nested inside other elements. The enclosed element is the child of the enclosing parent element.
-      Any visible content should be placed within the opening and closing &lt;body&gt; tags.
-      Headings and sub-headings, <span style="color: green;">&lt;h1&gt;</span> to <span style="color: green;">&lt;h6&gt;</span> tags, are used to provide titles for sections of content.
-      <span style="color: green;">&lt;p&gt;</span>, <span style="color: green;">&lt;span&gt;</span>, and <span style="color: green;">&lt;div&gt;</span> tags specify text or blocks.
-      The <span style="color: green;">&lt;em&gt;</span> and <span style="color: green;">&lt;strong&gt;</span> tags are used to emphasize text.
-      Line breaks are created with the <span style="color: green;">&lt;br&gt;</span> tag.
-      Ordered lists (<span style="color: green;">&lt;ol&gt;</span>) are numbered, and unordered lists (<span style="color: green;">&lt;ul&gt;</span>) are bulleted.
-      Images (<span style="color: green;">&lt;img&gt;</span>) and videos (<span style="color: green;">&lt;video&gt;</span>) can be added by linking to an existing source.
-    </p>
+        HTML elements can be nested inside other elements. The enclosed element is the child of the enclosing parent element.
+        Any visible content should be placed within the opening and closing &lt;body&gt; tags.
+        Headings and sub-headings, <span style="color: green;">&lt;h1&gt;</span> to <span style="color: green;">&lt;h6&gt;</span> tags, are used to provide titles for sections of content.
+        <span style="color: green;">&lt;p&gt;</span>, <span style="color: green;">&lt;span&gt;</span>, and <span style="color: green;">&lt;div&gt;</span> tags specify text or blocks.
+        The <span style="color: green;">&lt;em&gt;</span> and <span style="color: green;">&lt;strong&gt;</span> tags are used to emphasize text.
+        Line breaks are created with the <span style="color: green;">&lt;br&gt;</span> tag.
+        Ordered lists (<span style="color: green;">&lt;ol&gt;</span>) are numbered, and unordered lists (<span style="color: green;">&lt;ul&gt;</span>) are bulleted.
+        Images (<span style="color: green;">&lt;img&gt;</span>) and videos (<span style="color: green;">&lt;video&gt;</span>) can be added by linking to an existing source.
+      </p>
     </ul>
     
-      </ul>
     <hr>
   </section>
 
-  <!-- Main Content -->
   <section id="content">
-    <h2>
-      This is the Title of My Website
-    </h2>
+    <h2>This is the Title of My Website</h2>
 
     <h2>Welcome</h2>
     <div class="side-by-side">
       <img src="https://i.ytimg.com/vi/8DajVKAkL50/sddefault.jpg" alt="Original Image">
     </div>
 
-    <p>I started adding a css file into my html code.</p>
+    <p>I started adding a CSS file into my HTML code.</p>
 
     <p>In 2024, I am dedicated to learning web development.</p>
 
@@ -93,7 +102,6 @@
   
     <button onclick="changeColor()">Change Color</button>
   
-    <!-- HTML Cheatsheet Section -->
     <section id="cheatsheet">
       <h2>HTML Cheatsheet</h2>
       <h3>Headings</h3>
@@ -122,133 +130,11 @@
       <h3>Links</h3>
       <p><a href="file:///Users/trangdang/Code/trangdangberlin.github.io/index.html">Visit Example.com</a></p>
     
-      <!-- ... (rest of your HTML code) ... -->
-
       <h3>Add Images</h3>
       <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif" alt="Original Image">
       <h3>Add Small Images</h3>
       <img id="smallImage" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif" alt="Small Image">
 
       <span>I'm a span.</span>
-      <a href="#">This is my anchor tag, it allows me to create html links</a>
-      <!-- Example of self-closing tag -->
-      <input type="text" />
-      <body>
-        <p>What's up, doc?</p>
-      </body>
-      
-      <p>"Life is very short and what we have to do must be done in the now." - Audre Lorde</p>
-    </section>
-  </section>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Habit Calendar</title>
-  <style>
-    /* CSS Styles (Highlighted in Green) */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      color: #3498db;
-    }
-
-    .habit-button {
-      background-color: #2ecc71;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    #calendar {
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 10px;
-    }
-
-    .day {
-      background-color: #ecf0f1;
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    #update-btn {
-      background-color: #e74c3c;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin-top: 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Habit Calendar</h1>
-
-  <!-- Habit Buttons (Highlighted in Yellow) -->
-  <div>
-    <button class="habit-button" onclick="selectHabit('Exercise')">Exercise</button>
-    <button class="habit-button" onclick="selectHabit('Read')">Read</button>
-    <button class="habit-button" onclick="selectHabit('Meditate')">Meditate</button>
-  </div>
-
-  <!-- Time Frame (Highlighted in Blue) -->
-  <div>
-    <label for="time-frame">Select Time Frame:</label>
-    <select id="time-frame" onchange="changeTimeFrame()">
-      <option value="month">Month</option>
-      <option value="quarter">Quarter</option>
-      <option value="year">Year</option>
-    </select>
-  </div>
-
-  <!-- Habit Calendar (Highlighted in Purple) -->
-  <div id="calendar"></div>
-
-  <!-- Update Button (Highlighted in Red) -->
-  <button id="update-btn" onclick="updateCalendar()">Update Calendar</button>
-
-  <script>
-    // JavaScript Code (Highlighted in Orange)
-    function selectHabit(habit) {
-      console.log('Selected Habit:', habit);
-    }
-
-    function changeTimeFrame() {
-      const timeFrame = document.getElementById('time-frame').value;
-      console.log('Selected Time Frame:', timeFrame);
-    }
-
-    function updateCalendar() {
-      console.log('Calendar Updated');
-    }
-  </script>
-</body>
-</html>
-
+      <a href="#">This is my anchor tag, it allows me to create HTML links</a>
+      <input type="text" /> <!-- Example
