@@ -21,7 +21,7 @@ body {
   
   h1, h2 {
     color: #0f9d58;
-    text-align: center;
+    text-emphasis;
   }
   
   .side-by-side {
@@ -36,12 +36,14 @@ body {
   }
   
   button {
+    
     background-color: #0f9d58;
     color: #ffffff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  
   }
   
   button:hover {
