@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@ body {
   }
   
   section {
-    background-color: #ffffff;
+    background-color: #000000;;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,7 +20,7 @@ body {
   }
   
   h1, h2 {
-    color: #0f9d58;
+    color: #0f9d58;;
     text-emphasis;
   }
   
@@ -47,6 +47,8 @@ body {
   }
   
   button:hover {
-    background-color: #0c7e45;
+    background-color: #0f9d58;
   }
-  
+  .textintro{
+    color: aliceblue;
+  }
