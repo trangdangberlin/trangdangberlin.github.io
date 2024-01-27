@@ -20,14 +20,14 @@ body {
   }
   
   h1, h2 {
-    color: #0f9d58;;
-    text-emphasis;
+    color: #0f9d58;
   }
   
   .side-by-side {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    
   }
   
   #smallImage {
